@@ -21,8 +21,8 @@ SaffronCity_Dojo_EventScript_HitmonleeBall::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_HITMON_FROM_DOJO, SaffronCity_Dojo_EventScript_AlreadyGotHitmon
-	showmonpic SPECIES_TYROGUE, 10, 3
-	setvar VAR_TEMP_1, SPECIES_TYROGUE
+	showmonpic SPECIES_KARRABLAST, 10, 3
+	setvar VAR_TEMP_1, SPECIES_KARRABLAST
 	applymovement LOCALID_KARATE_MASTER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	textcolor NPC_TEXT_COLOR_MALE
@@ -42,8 +42,8 @@ SaffronCity_Dojo_EventScript_HitmonchanBall::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_HITMON_FROM_DOJO, SaffronCity_Dojo_EventScript_AlreadyGotHitmon
-	showmonpic SPECIES_RIOLU, 10, 3
-	setvar VAR_TEMP_1, SPECIES_RIOLU
+	showmonpic SPECIES_SHELMET, 10, 3
+	setvar VAR_TEMP_1, SPECIES_SHELMET
 	applymovement LOCALID_KARATE_MASTER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	textcolor NPC_TEXT_COLOR_MALE
@@ -225,7 +225,7 @@ SaffronCity_Dojo_Text_HitoshiPostBattle::
 
 SaffronCity_Dojo_Text_YouWantHitmonlee::
 	.string "You want the hard-kicking\n"
-	.string "TYROGUE?$"
+	.string "KARRABLAST?$"
 
 SaffronCity_Dojo_Text_ReceivedMonFromKarateMaster::
 	.string "{PLAYER} received the {STR_VAR_1}\n"
@@ -233,7 +233,7 @@ SaffronCity_Dojo_Text_ReceivedMonFromKarateMaster::
 
 SaffronCity_Dojo_Text_YouWantHitmonchan::
 	.string "You want the piston-punching\n"
-	.string "RIOLU?$"
+	.string "SHELMET?$"
 
 SaffronCity_Dojo_Text_ReceivedMonFromKarateMaster2::
 	.string "{PLAYER}は　カラテ　だいおう　から\n"

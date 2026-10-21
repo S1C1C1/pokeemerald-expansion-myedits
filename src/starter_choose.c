@@ -111,9 +111,9 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
 };
 
 // Starters are picked from the obtainable species list (see src/obtainable_species.c).
-#define GRASS_STARTER SPECIES_SHROOMISH
-#define FIRE_STARTER  SPECIES_SLUGMA
-#define WATER_STARTER SPECIES_TYMPOLE
+#define GRASS_STARTER SPECIES_PANSAGE
+#define FIRE_STARTER  SPECIES_PANSEAR
+#define WATER_STARTER SPECIES_PANPOUR
 
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {

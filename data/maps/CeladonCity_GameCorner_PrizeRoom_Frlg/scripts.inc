@@ -39,11 +39,11 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange::
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_Abra::
 	#ifdef FIRERED
-	setvar VAR_TEMP_1, SPECIES_WYNAUT
+	setvar VAR_TEMP_1, SPECIES_MUNNA
 	setvar VAR_TEMP_2, 180
 	#else
 	#ifdef LEAFGREEN
-	setvar VAR_TEMP_1, SPECIES_WYNAUT
+	setvar VAR_TEMP_1, SPECIES_MUNNA
 	setvar VAR_TEMP_2, 120
 	#endif
 	#endif
@@ -65,11 +65,11 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Clefairy::
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_DratiniPinsir::
 	#ifdef FIRERED
-	setvar VAR_TEMP_1, SPECIES_DRATINI
+	setvar VAR_TEMP_1, SPECIES_APPLIN
 	setvar VAR_TEMP_2, 2800
 	#else
 	#ifdef LEAFGREEN
-	setvar VAR_TEMP_1, SPECIES_RELLOR
+	setvar VAR_TEMP_1, SPECIES_MILCERY
 	setvar VAR_TEMP_2, 2500
 	#endif
 	#endif
@@ -78,11 +78,11 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_DratiniPinsir::
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ScytherDratini::
 	#ifdef FIRERED
-	setvar VAR_TEMP_1, SPECIES_NYMBLE
+	setvar VAR_TEMP_1, SPECIES_SINISTEA
 	setvar VAR_TEMP_2, 5500
 	#else
 	#ifdef LEAFGREEN
-	setvar VAR_TEMP_1, SPECIES_DRATINI
+	setvar VAR_TEMP_1, SPECIES_APPLIN
 	setvar VAR_TEMP_2, 4600
 	#endif
 	#endif
@@ -91,11 +91,11 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ScytherDratini::
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_Porygon::
 	#ifdef FIRERED
-	setvar VAR_TEMP_1, SPECIES_TOXEL
+	setvar VAR_TEMP_1, SPECIES_MELTAN
 	setvar VAR_TEMP_2, 9999
 	#else
 	#ifdef LEAFGREEN
-	setvar VAR_TEMP_1, SPECIES_TOXEL
+	setvar VAR_TEMP_1, SPECIES_MELTAN
 	setvar VAR_TEMP_2, 6500
 	#endif
 	#endif
@@ -110,12 +110,12 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeMon::
 	goto_if_lt VAR_RESULT, VAR_TEMP_2, CeladonCity_GameCorner_PrizeRoom_EventScript_NotEnoughCoins
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	switch VAR_TEMP_1
-	case SPECIES_WYNAUT,     CeladonCity_GameCorner_PrizeRoom_EventScript_GiveAbra
+	case SPECIES_MUNNA,     CeladonCity_GameCorner_PrizeRoom_EventScript_GiveAbra
 	case SPECIES_CLEFFA, CeladonCity_GameCorner_PrizeRoom_EventScript_GiveClefairy
-	case SPECIES_DRATINI,  CeladonCity_GameCorner_PrizeRoom_EventScript_GiveDratini
-	case SPECIES_NYMBLE,  CeladonCity_GameCorner_PrizeRoom_EventScript_GiveScyther
-	case SPECIES_TOXEL,  CeladonCity_GameCorner_PrizeRoom_EventScript_GivePorygon
-	case SPECIES_RELLOR,   CeladonCity_GameCorner_PrizeRoom_EventScript_GivePinsir
+	case SPECIES_APPLIN,  CeladonCity_GameCorner_PrizeRoom_EventScript_GiveDratini
+	case SPECIES_SINISTEA,  CeladonCity_GameCorner_PrizeRoom_EventScript_GiveScyther
+	case SPECIES_MELTAN,  CeladonCity_GameCorner_PrizeRoom_EventScript_GivePorygon
+	case SPECIES_MILCERY,   CeladonCity_GameCorner_PrizeRoom_EventScript_GivePinsir
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_GiveAbra::
@@ -380,7 +380,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_YellowFlute::
 	end
 
 CeladonCity_GameCorner_PrizeRoom_Text_FancyThatPorygon::
-	.string "I sure do fancy that TOXEL!\n"
+	.string "I sure do fancy that MELTAN!\n"
 	.string "But, it's hard to win at slots!$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_RakedItInToday::

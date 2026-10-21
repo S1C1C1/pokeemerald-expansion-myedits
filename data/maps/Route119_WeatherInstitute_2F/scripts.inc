@@ -81,8 +81,8 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 
 Route119_WeatherInstitute_2F_EventScript_ReceiveCastform::
 	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon, MSGBOX_DEFAULT
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_WATTREL
-	givemon SPECIES_WATTREL, 25, ITEM_MYSTIC_WATER
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_DELIBIRD
+	givemon SPECIES_DELIBIRD, 25, ITEM_NEVER_MELT_ICE
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformPC
 	goto Common_EventScript_NoMoreRoomForPokemon
@@ -115,7 +115,7 @@ Route119_WeatherInstitute_2F_EventScript_ReceivedCastformFanfare::
 	message Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_WATTREL
+	bufferspeciesname STR_VAR_1, SPECIES_DELIBIRD
 	return
 
 Route119_WeatherInstitute_2F_EventScript_ExplainCastform::
@@ -289,10 +289,10 @@ Route119_WeatherInstitute_2F_Text_NoRoomForPokemon:
 	.string "for this POKéMON.$"
 
 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
-	.string "{PLAYER} received WATTREL!$"
+	.string "{PLAYER} received DELIBIRD!$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
-	.string "That POKéMON loves stormy weather.\p"
+	.string "That POKéMON loves snowy weather.\p"
 	.string "There're plenty of them in the\n"
 	.string "INSTITUTE--go ahead and take it.$"
 

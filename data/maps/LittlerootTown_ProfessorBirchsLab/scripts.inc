@@ -302,7 +302,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Totodile::
 	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6, LittlerootTown_ProfessorBirchsLab_EventScript_AlreadyChoseJohtoStarter
 	applymovement LOCALID_BIRCHS_LAB_BIRCH, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	showmonpic SPECIES_CHEWTLE, 10, 3
+	showmonpic SPECIES_STARYU, 10, 3
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile
@@ -313,7 +313,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_Chikorita::
 	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6, LittlerootTown_ProfessorBirchsLab_EventScript_AlreadyChoseJohtoStarter
 	applymovement LOCALID_BIRCHS_LAB_BIRCH, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	showmonpic SPECIES_SMOLIV, 10, 3
+	showmonpic SPECIES_SEEDOT, 10, 3
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita
@@ -372,9 +372,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedCyndaquil::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile::
-	bufferspeciesname STR_VAR_1, SPECIES_CHEWTLE
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHEWTLE
-	givemon SPECIES_CHEWTLE, 5
+	bufferspeciesname STR_VAR_1, SPECIES_STARYU
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_STARYU
+	givemon SPECIES_STARYU, 5
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToPC
 	hidemonpic
@@ -413,9 +413,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedTotodile::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita::
-	bufferspeciesname STR_VAR_1, SPECIES_SMOLIV
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SMOLIV
-	givemon SPECIES_SMOLIV, 5
+	bufferspeciesname STR_VAR_1, SPECIES_SEEDOT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SEEDOT
+	givemon SPECIES_SEEDOT, 5
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToPC
 	hidemonpic
@@ -905,15 +905,15 @@ LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil:
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
 	.string "PROF. BIRCH: The WATER POKéMON\n"
-	.string "CHEWTLE is your choice!\p"
+	.string "STARYU is your choice!\p"
 	.string "You know how to pick a good one.\p"
-	.string "So, you'll take the CHEWTLE?$"
+	.string "So, you'll take the STARYU?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
 	.string "PROF. BIRCH: The GRASS POKéMON\n"
-	.string "SMOLIV is your choice!\p"
+	.string "SEEDOT is your choice!\p"
 	.string "You sure know what you're doing.\p"
-	.string "So, you'll take the SMOLIV?$"
+	.string "So, you'll take the SEEDOT?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable:
 	.string "PROF. BIRCH: Take your time before\n"
