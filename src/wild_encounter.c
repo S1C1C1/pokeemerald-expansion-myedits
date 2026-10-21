@@ -64,7 +64,8 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 
 #include "data/wild_encounters.h"
 
-const struct WildPokemon gWildFeebas = {20, 25, SPECIES_FEEBAS};
+// Feebas is not obtainable in this hack, so the special Route 119 fishing spots give Wishiwashi instead.
+const struct WildPokemon gWildFeebas = {20, 25, SPECIES_WISHIWASHI};
 
 static const u16 sRoute119WaterTileData[] =
 {

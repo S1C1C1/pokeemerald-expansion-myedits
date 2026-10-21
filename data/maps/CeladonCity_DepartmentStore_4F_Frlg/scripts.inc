@@ -27,10 +27,7 @@ CeladonCity_DepartmentStore_4F_EventScript_Clerk::
 CeladonCity_DepartmentStore_4F_Items::
 	.2byte ITEM_POKE_DOLL
 	.2byte ITEM_RETRO_MAIL
-	.2byte ITEM_FIRE_STONE
-	.2byte ITEM_THUNDER_STONE
-	.2byte ITEM_WATER_STONE
-	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_FULL_RESTORE
 	.2byte ITEM_NONE
 	release
 	end
@@ -51,5 +48,5 @@ CeladonCity_DepartmentStore_4F_Text_CanRunAwayWithPokeDoll::
 CeladonCity_DepartmentStore_4F_Text_FloorSign::
 	.string "Express yourself with gifts!\n"
 	.string "4F: WISE MAN GIFTS\p"
-	.string "Evolution Special!\n"
-	.string "Element STONES on sale now!$"
+	.string "Recovery Special!\n"
+	.string "FULL RESTORES on sale now!$"

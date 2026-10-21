@@ -39,7 +39,7 @@ MtMoon_1F_EventScript_ItemEscapeRope::
 	end
 
 MtMoon_1F_EventScript_ItemMoonStone::
-	finditem ITEM_MOON_STONE
+	finditem ITEM_FULL_RESTORE
 	end
 
 MtMoon_B2F_EventScript_ItemStarPiece::
@@ -107,7 +107,7 @@ RocketHideout_B2F_EventScript_ItemXSpeed::
 	end
 
 RocketHideout_B2F_EventScript_ItemMoonStone::
-	finditem ITEM_MOON_STONE
+	finditem ITEM_FULL_RESTORE
 	end
 
 RocketHideout_B2F_EventScript_ItemTM12::
@@ -195,7 +195,7 @@ SafariZone_East_EventScript_ItemTM11::
 	end
 
 SafariZone_East_EventScript_ItemLeafStone::
-	finditem ITEM_LEAF_STONE
+	finditem ITEM_FULL_RESTORE
 	end
 
 SafariZone_North_EventScript_ItemProtein::
@@ -291,7 +291,7 @@ PowerPlant_EventScript_ItemTM25::
 	end
 
 PowerPlant_EventScript_ItemThunderStone::
-	finditem ITEM_THUNDER_STONE
+	finditem ITEM_FULL_RESTORE
 	end
 
 PowerPlant_EventScript_ItemElixir::
@@ -503,7 +503,7 @@ SeafoamIslands_1F_EventScript_ItemIceHeal::
 	end
 
 SeafoamIslands_B1F_EventScript_ItemWaterStone::
-	finditem ITEM_WATER_STONE
+	finditem ITEM_FULL_RESTORE
 	end
 
 SeafoamIslands_B1F_EventScript_ItemRevive::
@@ -571,7 +571,7 @@ SixIsland_RuinValley_EventScript_ItemHPUp::
 	end
 
 SixIsland_RuinValley_EventScript_ItemSunStone::
-	finditem ITEM_SUN_STONE
+	finditem ITEM_FULL_RESTORE
 	end
 
 SevenIsland_SevaultCanyon_EventScript_ItemKingsRock::
@@ -603,7 +603,7 @@ MtEmber_Exterior_EventScript_ItemUltraBall::
 	end
 
 MtEmber_Exterior_EventScript_ItemFireStone::
-	finditem ITEM_FIRE_STONE
+	finditem ITEM_FULL_RESTORE
 	end
 
 MtEmber_Exterior_EventScript_ItemDireHit::

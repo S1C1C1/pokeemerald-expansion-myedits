@@ -45,8 +45,8 @@ Route4_PokemonCenter_1F_EventScript_TryBuyMagikarp::
 	checkmoney MAGIKARP_PRICE
 	goto_if_eq VAR_RESULT, FALSE, Route4_PokemonCenter_1F_EventScript_NotEnoughMoney
 	textcolor NPC_TEXT_COLOR_NEUTRAL
-	setvar VAR_TEMP_1, SPECIES_MAGIKARP
-	givemon SPECIES_MAGIKARP, 5
+	setvar VAR_TEMP_1, SPECIES_WISHIWASHI
+	givemon SPECIES_WISHIWASHI, 5
 	goto_if_eq VAR_RESULT, 0, Route4_PokemonCenter_1F_EventScript_BuyMagikarpParty
 	goto_if_eq VAR_RESULT, 1, Route4_PokemonCenter_1F_EventScript_BuyMagikarpPC
 	goto_if_eq VAR_RESULT, 2, Route4_PokemonCenter_1F_EventScript_NoRoomForMagikarp
@@ -102,7 +102,7 @@ Route4_PokemonCenter_1F_EventScript_PayForMagikarp::
 	message Route4_PokemonCenter_1F_Text_PaidOutrageouslyForMagikarp
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_MAGIKARP
+	bufferspeciesname STR_VAR_1, SPECIES_WISHIWASHI
 	return
 
 Route4_PokemonCenter_1F_EventScript_DeclineMagikarp::
@@ -162,19 +162,19 @@ Route4_PokemonCenter_1F_Text_LaddieBuyMagikarpForJust500::
 	.string "MAN: Hello there, laddie!\n"
 	.string "Have I got a deal just for you!\p"
 	.string "I'll let you have a secret POKéMON\n"
-	.string "- a MAGIKARP - for just ¥500!\p"
+	.string "- a WISHIWASHI - for just ¥500!\p"
 	.string "So, you'll buy it, am I right?$"
 
 Route4_PokemonCenter_1F_Text_SweetieBuyMagikarpForJust500::
 	.string "MAN: Hello there, sweetie pie!\n"
 	.string "Have I got a deal just for you!\p"
 	.string "I'll let you have a secret POKéMON\n"
-	.string "- a MAGIKARP - for just ¥500!\p"
+	.string "- a WISHIWASHI - for just ¥500!\p"
 	.string "So, you'll buy it, am I right?$"
 
 Route4_PokemonCenter_1F_Text_PaidOutrageouslyForMagikarp::
 	.string "{PLAYER} paid an outrageous ¥500\n"
-	.string "and bought the MAGIKARP…$"
+	.string "and bought the WISHIWASHI…$"
 
 Route4_PokemonCenter_1F_Text_OnlyDoingThisAsFavorToYou::
 	.string "No? You say no? I'm only doing this\n"

@@ -372,7 +372,7 @@ static const enum Item sFavorLadyAcceptedItems_Shiny[] =
     ITEM_BLACK_FLUTE,
     ITEM_WHITE_FLUTE,
     ITEM_NUGGET,
-    ITEM_SUN_STONE,
+    ITEM_FULL_RESTORE,
     ITEM_STARDUST,
     ITEM_STAR_PIECE,
     ITEM_PEARL,

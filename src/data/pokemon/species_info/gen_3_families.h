@@ -8110,7 +8110,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #endif
         .evYield_SpAttack = 2,
         .itemCommon = ITEM_STARDUST,
-        .itemRare = ITEM_MOON_STONE,
+        .itemRare = ITEM_FULL_RESTORE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
@@ -8190,7 +8190,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #endif
         .evYield_Attack = 2,
         .itemCommon = ITEM_STARDUST,
-        .itemRare = ITEM_SUN_STONE,
+        .itemRare = ITEM_FULL_RESTORE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,

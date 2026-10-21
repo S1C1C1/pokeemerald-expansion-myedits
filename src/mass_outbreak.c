@@ -19,7 +19,7 @@ static const struct MassOutbreak sPokeOutbreakSpeciesList[OUTBREAK_COUNT] = {
 
     },
     [OUTBREAK_ID_ROUTE114] = {
-        .species = SPECIES_NUZLEAF,
+        .species = SPECIES_SEEDOT, // Nuzleaf is not obtainable
         .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
         .level = 15,
         .probability = 50,

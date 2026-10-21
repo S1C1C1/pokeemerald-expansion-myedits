@@ -162,11 +162,11 @@ TwoIsland_JoyfulGameCorner_EventScript_GiveDaddyMeteorite::
 	end
 
 TwoIsland_JoyfulGameCorner_EventScript_ReceiveMoonStone::
-	checkitemspace ITEM_MOON_STONE
+	checkitemspace ITEM_FULL_RESTORE
 	goto_if_eq VAR_RESULT, FALSE, TwoIsland_JoyfulGameCorner_EventScript_NoRoomForMoonStone
-	additem ITEM_MOON_STONE
+	additem ITEM_FULL_RESTORE
 	setflag FLAG_GOT_MOON_STONE_FROM_JOYFUL_GAME_CORNER
-	msgreceiveditem TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy, ITEM_MOON_STONE
+	msgreceiveditem TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy, ITEM_FULL_RESTORE
 	release
 	end
 
@@ -283,7 +283,7 @@ TwoIsland_JoyfulGameCorner_Text_OhThisIsFromBill::
 	.string "I want you to have this.$"
 
 TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy::
-	.string "{PLAYER} received a MOON STONE\n"
+	.string "{PLAYER} received a FULL RESTORE\n"
 	.string "from LOSTELLE's daddy.$"
 
 TwoIsland_JoyfulGameCorner_Text_NotGoingToFitInBag::
